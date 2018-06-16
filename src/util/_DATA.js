@@ -41,11 +41,11 @@ let questions = {
     timestamp: 1467166872634,
     optionOne: {
       votes: ["sarahedo"],
-      text: "have horrible short term memory"
+      text: "Be Able To Detect Any Lie You Hear"
     },
     optionTwo: {
       votes: [],
-      text: "have horrible long term memory"
+      text: "Get Away With Any Lie You Tell"
     }
   },
   "6ni6ok3ym7mf1p33lnez": {
@@ -54,11 +54,11 @@ let questions = {
     timestamp: 1468479767190,
     optionOne: {
       votes: [],
-      text: "become a superhero"
+      text: "Have Too Many Friends"
     },
     optionTwo: {
       votes: ["johndoe", "sarahedo"],
-      text: "become a supervillian"
+      text: "Too Few Friends"
     }
   },
   am8ehyc8byjqgar0jgpub9: {
@@ -67,11 +67,11 @@ let questions = {
     timestamp: 1488579767190,
     optionOne: {
       votes: [],
-      text: "be telekinetic"
+      text: "Have No Taste Buds"
     },
     optionTwo: {
       votes: ["sarahedo"],
-      text: "be telepathic"
+      text: "Be Color Blind"
     }
   },
   loxhs1bqm25b708cmbf3g: {
@@ -80,11 +80,11 @@ let questions = {
     timestamp: 1482579767190,
     optionOne: {
       votes: [],
-      text: "be a front-end developer"
+      text: "Be The Richest Person In The World"
     },
     optionTwo: {
       votes: ["sarahedo"],
-      text: "be a back-end developer"
+      text: "Be The Smartest Person In The World"
     }
   },
   vthrdm985a262al8qx3do: {
@@ -93,11 +93,11 @@ let questions = {
     timestamp: 1489579767190,
     optionOne: {
       votes: ["tylermcginnis"],
-      text: "find $50 yourself"
+      text: "Age From The Neck Up Only"
     },
     optionTwo: {
       votes: ["johndoe"],
-      text: "have your best friend find $500"
+      text: "Age From The Neck Down Only"
     }
   },
   xj352vofupe1dqz9emx13r: {
@@ -106,11 +106,11 @@ let questions = {
     timestamp: 1493579767190,
     optionOne: {
       votes: ["johndoe"],
-      text: "write JavaScript"
+      text: "See The World And Live In Poverty"
     },
     optionTwo: {
       votes: ["tylermcginnis"],
-      text: "write Swift"
+      text: "Stay In One Place And Live Rich"
     }
   }
 };
