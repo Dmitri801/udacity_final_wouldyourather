@@ -28,7 +28,7 @@ class QuestionCardDetail extends Component {
 
   componentDidUpdate() {
     if (this.state.selectedOption !== null) {
-      window.scrollTo(0, 200);
+      window.scrollTo(0, 150);
     }
   }
 

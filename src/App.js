@@ -17,6 +17,7 @@ import Navbar from "./components/Layout/Nav/Navbar";
 import Login from "./components/Auth/Login";
 import NoMatch from "./components/Layout/NoMatch";
 import LoadingBar from "react-redux-loading";
+import Footer from "./components/Layout/Footer/Footer";
 import { connect } from "react-redux";
 
 const PrivateRoute = ({ component: Component, ...rest }) => (
@@ -50,23 +51,32 @@ class App extends Component {
           />
 
           {this.props.loading ? null : (
-            <div>
+            <div
+              style={{
+                display: "flex",
+                minHeight: "100vh",
+                flexDirection: "column"
+              }}
+            >
               <Navbar />
-              <Container className="main">
-                <Switch>
-                  <Route path="/login" component={Login} />
-                  <PrivateRoute path="/leaderboard" component={LeaderBoard} />
-                  <PrivateRoute path="/home" component={HomePage} />
-                  <PrivateRoute path="/add" component={NewQuestionForm} />
-                  <PrivateRoute
-                    path="/question/:question_id"
-                    component={QuestionCardDetail}
-                  />
-                  <Route path="/test" component={Test} />
-                  <Redirect exact from="/" to="/login" />
-                  <Route component={NoMatch} />
-                </Switch>
-              </Container>
+              <div style={{ flex: 1 }}>
+                <Container className="main">
+                  <Switch>
+                    <Route path="/login" component={Login} />
+                    <PrivateRoute path="/leaderboard" component={LeaderBoard} />
+                    <PrivateRoute path="/home" component={HomePage} />
+                    <PrivateRoute path="/add" component={NewQuestionForm} />
+                    <PrivateRoute
+                      path="/question/:question_id"
+                      component={QuestionCardDetail}
+                    />
+                    <Route path="/test" component={Test} />
+                    <Redirect exact from="/" to="/login" />
+                    <Route component={NoMatch} />
+                  </Switch>
+                </Container>
+              </div>
+              <Footer />
             </div>
           )}
         </div>

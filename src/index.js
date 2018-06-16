@@ -16,7 +16,7 @@ ReactDOM.render(
         timeOut={2000}
         newestOnTop={false}
         preventDuplicates
-        position="bottom-right"
+        position="top-left"
         transitionIn="bounceIn"
         transitionOut="bounceOut"
       />
