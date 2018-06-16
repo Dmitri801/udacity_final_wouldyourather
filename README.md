@@ -19,19 +19,25 @@ You can find the most recent version of the Create React App Guide [here](https:
 
 ---
 
-`cd udacity_final_wouldyourather`
+```bash
+cd udacity_final_wouldyourather
+```
 
 ## Install Dependancies
 
 ---
 
-`npm install`
+```bash
+npm install
+```
 
 ## Start Dev Server
 
 ---
 
-`npm start`
+```bash
+npm start
+```
 
 # Playing The Game
 
