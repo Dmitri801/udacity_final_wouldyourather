@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css?family=Arvo");
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #eee;
+  font-family: "Arvo", serif !important;
+}
+
+/* Spinner */
+
+.spinnerX:before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 60px;
+  width: 60px;
+  margin-top: 30px;
+  margin-left: -30px;
+  border-radius: 50%;
+  border-top: 5px solid black;
+  border-right: 5px solid transparent;
+  animation: spinner 0.9s linear infinite;
+}
+
+#spinnerZ:before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 1000px;
+  width: 100px;
+  margin-top: 30px;
+  margin-left: -30px;
+  border-radius: 50%;
+  border-top: 5px solid black;
+  border-right: 5px solid transparent;
+  animation: spinner 0.9s linear infinite;
+}
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Home Page Styles */
+.masthead {
+  background-image: linear-gradient(
+    135deg,
+    rgb(37, 36, 37) 0%,
+    rgb(62, 70, 73) 69%,
+    rgb(131, 141, 141) 89%
+  ) !important;
+}
+
+.masthead.segment {
+  min-height: 1000px;
+  padding: 1em 0 !important;
+}
+
+#homeButton {
+  display: block;
+  margin: 0 70px;
+  border-radius: 50%;
+}
+
+.menuForNav {
+  background-image: linear-gradient(
+    240deg,
+    rgb(37, 36, 37) 0%,
+    rgb(62, 70, 73) 69%,
+    rgb(131, 141, 141) 89%
+  ) !important;
+}
+
+.loginList:hover {
+  cursor: pointer;
+}
+
+.loginCard {
+  box-shadow: 30px 0 40px rgba(0, 0, 0, 0.1), -30px 0px 40px rgba(0, 0, 0, 0.1) !important;
+}
+
+.registerOpenBtn {
+  box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.4),
+    -10px 0px 20px rgba(0, 0, 0, 0.1) !important;
+  margin-top: 14px !important;
+}
+
+.registerOpenBtn:focus {
+  box-shadow: none;
+}
+
+.loginBtn {
+  box-shadow: 30px 0 40px rgba(0, 0, 0, 0.1), -30px 0px 40px rgba(0, 0, 0, 0.1) !important;
+}
+
+.loginBtn:hover {
+  box-shadow: none;
+}
+
+.loginListUser:hover {
+  background-color: #fafafa;
+}
+
+.home {
+  margin: 100px auto;
+}
+
+.homeTab {
+  box-shadow: 10px 0 40px rgba(0, 0, 0, 0.1), -30px 0px 40px rgba(0, 0, 0, 0.1) !important;
+}
+
+.leaderboard {
+  margin: 100px auto;
+}
+
+.leaderBtnCol {
+  margin-left: 20px !important;
+}
+
+.leaderGoBackBtn {
+  box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.1),
+    -20px 0px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.leaderGoBackBtn:hover {
+  box-shadow: none;
+}
+
+.leaderSegment {
+  box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.1),
+    -10px 0px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.newQuestionSegment {
+  box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.1),
+    -10px 0px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.askBtn {
+  margin-top: 10px !important;
+  padding: 10px 0 !important;
+  font-size: 2rem !important;
+}
+
+.askBtn:focus {
+  box-shadow: none;
+}
+
+.askBtn:hover {
+  color: white !important;
+}
+
+.askRow {
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 0 !important;
+}
+
+.newQuestion {
+  margin: 100px auto;
+}
+
+.revealImage {
+  height: 250px !important;
+  box-shadow: 10px 0 40px rgba(0, 0, 0, 0.3), 0px 0px 40px rgba(0, 0, 0, 0.1) !important;
+  transition: all 0.2s ease-in-out;
+  filter: grayscale(1);
+}
+
+.revealImage:hover {
+  cursor: pointer;
+  box-shadow: 10px 0 40px rgba(0, 0, 0, 0.3), 0px 0px 40px rgba(0, 0, 0, 0.2) !important;
+  transform: scale(1.1);
+}
+
+.cardDetail {
+  margin: 100px auto;
+}
+
+#usernameDropdown:hover {
+  background-color: rgba(99, 97, 97, 0.2);
+}
+/* Starting state of animation */
+.fade-enter {
+  right: 100px;
+}
+
+/* end state of animation */
+.fade-enter-active {
+  right: 0px;
+  transition: 0.5s ease-in all;
+}

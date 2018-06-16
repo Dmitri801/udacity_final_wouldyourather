@@ -1,0 +1,33 @@
+{
+  "name": "would_you_rather",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cuid": "^2.1.1",
+    "moment": "^2.22.2",
+    "react": "^16.4.0",
+    "react-addons-css-transition-group": "^15.6.2",
+    "react-dom": "^16.4.0",
+    "react-moment": "^0.7.0",
+    "react-redux": "^5.0.7",
+    "react-redux-loading": "^1.0.1",
+    "react-redux-toastr": "^7.3.0",
+    "react-router-dom": "^4.3.0-rc.3",
+    "react-scripts": "1.1.4",
+    "react-spring": "^5.3.13",
+    "redux": "^4.0.0",
+    "redux-form": "^7.3.0",
+    "redux-thunk": "^2.3.0",
+    "revalidate": "^1.2.0",
+    "semantic-ui-css": "^2.3.1",
+    "semantic-ui-react": "^0.80.2",
+    "wow.js": "^1.2.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
