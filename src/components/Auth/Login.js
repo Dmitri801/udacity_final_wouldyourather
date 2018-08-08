@@ -3,9 +3,17 @@ import { fakeAuth } from "../../util/fakeAuth";
 import { connect } from "react-redux";
 import { Redirect } from "react-router-dom";
 import { Spring } from "react-spring";
-// import Register from "./Register";
+import Register from "./Register";
 import { setAuthedUser } from "../../actions/authUser";
-import { Grid, List, Image, Card, Icon, Button } from "semantic-ui-react";
+import {
+  Grid,
+  List,
+  Image,
+  Card,
+  Icon,
+  Button,
+  Divider
+} from "semantic-ui-react";
 
 class Login extends Component {
   state = {
@@ -46,9 +54,9 @@ class Login extends Component {
       e.target.className.includes("radio") ||
       e.target.className.includes("button")
     ) {
-    } else {
-      this.setState({ loginActivated: false, selectedUser: "" });
+      return;
     }
+    this.setState({ loginActivated: false, selectedUser: "" });
   };
 
   onModelClick = () => {
@@ -101,7 +109,16 @@ class Login extends Component {
           <h1 style={{ textAlign: "center" }}>Select A Username</h1>
           <Card
             fluid
-            style={{ padding: "20px 40px", marginBottom: "0" }}
+            style={
+              selectedUser !== ""
+                ? { padding: "20px 40px", marginBottom: "0", boxShadow: "none" }
+                : {
+                    padding: "20px 40px",
+                    marginBottom: "0",
+                    boxShadow:
+                      "0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22)"
+                  }
+            }
             color="black"
             className="loginCard"
           >
@@ -127,18 +144,27 @@ class Login extends Component {
               )}
             </Spring>
           )}
-          {/* <Register
-            registerOpen={this.state.registerOpen}
-            onModelClick={this.onModelClick}
-          /> */}
+          <Divider />
+          {!loginActivated && (
+            <Spring from={{ opacity: 0 }} to={{ opacity: 1 }}>
+              {styles => (
+                <div style={styles}>
+                  <Register
+                    onModelClick={this.onModelClick}
+                    registerOpen={this.state.registerOpen}
+                  />
+                </div>
+              )}
+            </Spring>
+          )}
         </Grid.Column>
       </Grid>
     );
   }
 }
 
-const mapStateToProps = state => ({
-  users: state.users
+const mapStateToProps = ({ users }) => ({
+  users
 });
 
 export default connect(

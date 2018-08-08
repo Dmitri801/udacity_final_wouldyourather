@@ -9,6 +9,7 @@
     "react": "^16.4.0",
     "react-addons-css-transition-group": "^15.6.2",
     "react-dom": "^16.4.0",
+    "react-list": "^0.8.10",
     "react-moment": "^0.7.0",
     "react-redux": "^5.0.7",
     "react-redux-loading": "^1.0.1",

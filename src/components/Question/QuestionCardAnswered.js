@@ -58,7 +58,7 @@ class QuestionCardAnswered extends Component {
                 fluid
                 content="Details"
                 color="green"
-                onClick={this.questionReveal.bind(this, question.id)}
+                onClick={() => this.questionReveal(question.id)}
               />
             </Card.Content>
           </Card>

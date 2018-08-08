@@ -207,3 +207,24 @@ export function _saveQuestionAnswer({ authedUser, qid, answer }) {
     }, 500);
   });
 }
+
+export function _registerNewUser(userName, password, name, avatarURL) {
+  let questionsArr = Object.keys(questions);
+  return new Promise((res, rej) => {
+    setTimeout(() => {
+      users = {
+        ...users,
+        [userName]: {
+          id: userName,
+          name,
+          avatarURL,
+          password,
+          answers: {},
+          questions: questionsArr
+        }
+      };
+
+      res(users);
+    }, 500);
+  });
+}

@@ -61,14 +61,8 @@ class QuestionCardDetail extends Component {
 
   selectOption = e => {
     this.setState({
-      selectedOption: e.target.name,
-      loading: true
+      selectedOption: e.target.name
     });
-    setTimeout(() => {
-      this.setState({
-        loading: false
-      });
-    }, 400);
   };
 
   onQuestionAnswerSubmit = (authedUser, qid, answer) => {
@@ -195,47 +189,7 @@ class QuestionCardDetail extends Component {
                   ) : null}
                 </Card.Description>
               </Card.Content>
-              {selectedOption !== null &&
-                loading === false && (
-                  <Card.Content>
-                    <Card.Description>
-                      {selectedOption === "optionOne" && loading === false ? (
-                        <div>
-                          <Divider />
-                          <p style={{ color: "green" }}>
-                            <Icon
-                              color="yellow"
-                              name="trophy"
-                              size="large"
-                              circular
-                            />{" "}
-                            {question.optionOne.text.toUpperCase()}
-                          </p>
-                        </div>
-                      ) : null}
-                      {selectedOption === "optionTwo" && loading === false ? (
-                        <div>
-                          <Divider />
-                          <p style={{ color: "red" }}>
-                            <Icon
-                              color="yellow"
-                              name="trophy"
-                              size="large"
-                              circular
-                            />{" "}
-                            {question.optionTwo.text.toUpperCase()}
-                          </p>
-                        </div>
-                      ) : null}
-                    </Card.Description>
-                    <Divider />
-                    <Image
-                      size="mini"
-                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-ABApllJfJ_9hkM8uc4FcE3cr4zdtFa0vVFxDGQjvP_yOZllw"
-                      bordered
-                    />
-                  </Card.Content>
-                )}
+
               <Card.Content extra>
                 <div className="ui two buttons">
                   <Button
