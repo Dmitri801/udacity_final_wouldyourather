@@ -18,9 +18,9 @@ class Register extends Component {
   };
 
   createNewUser = () => {
-    const { userName, password, name, avatarURL } = this.state;
+    const { userName, name, avatarURL } = this.state;
     this.setState({ loading: true });
-    this.props.handleRegisterNewUser(userName, password, name, avatarURL);
+    this.props.handleRegisterNewUser(userName, name, avatarURL);
     setTimeout(() => {
       this.props.onModelClick();
       this.setState({ loading: false });
@@ -57,16 +57,7 @@ class Register extends Component {
                 value={this.state.userName}
               />
             </Form.Field>
-            <Form.Field required>
-              <label>Password</label>
-              <input
-                placeholder="Password"
-                type="password"
-                onChange={this.onInputChange}
-                name="password"
-                value={this.state.password}
-              />
-            </Form.Field>
+
             <Form.Field>
               <label>Name</label>
               <input

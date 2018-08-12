@@ -208,7 +208,7 @@ export function _saveQuestionAnswer({ authedUser, qid, answer }) {
   });
 }
 
-export function _registerNewUser(userName, password, name, avatarURL) {
+export function _registerNewUser(userName, name, avatarURL) {
   let questionsArr = Object.keys(questions);
   return new Promise((res, rej) => {
     setTimeout(() => {
@@ -218,7 +218,6 @@ export function _registerNewUser(userName, password, name, avatarURL) {
           id: userName,
           name,
           avatarURL,
-          password,
           answers: {},
           questions: questionsArr
         }
