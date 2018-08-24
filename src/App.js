@@ -59,7 +59,7 @@ class App extends Component {
               }}
             >
               <Navbar />
-              <div style={{ flex: 1 }}>
+              <div style={{ flex: 1, width: "100%" }}>
                 <Container className="main">
                   <Switch>
                     <Route path="/login" component={Login} />
@@ -76,7 +76,6 @@ class App extends Component {
                   </Switch>
                 </Container>
               </div>
-              <Footer />
             </div>
           )}
         </div>
