@@ -1,0 +1,22 @@
+{
+  "name": "wyr-apiserver",
+  "version": "1.0.0",
+  "description": "api for the would you rather game",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "DMI",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^3.0.3",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "helmet": "^3.15.0",
+    "jsonwebtoken": "^8.4.0",
+    "mongoose": "^5.4.9",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "validator": "^10.11.0"
+  }
+}
